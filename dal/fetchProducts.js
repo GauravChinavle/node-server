@@ -6,7 +6,7 @@ const categoryColumns = ["cat.categoryName"];
 const subcatColumns = ["subcat.subCategoryName"];
 const categoryTable = "CategoryV2";
 const subcatTable = "SubCategoryV2";
-const orderDirections = ["descending", "ascending"]
+const orderDirections = ["desc", "asc"]
 
 const fetchProducts = async (data) => {
 
