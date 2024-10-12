@@ -1,0 +1,1 @@
+curl --location 'localhost:3001/products?currentPage=1&pageSize=10&orderBy=prd.productId&orderDir=ascending&searchBy=Apple&searchFields=prd.brandName'

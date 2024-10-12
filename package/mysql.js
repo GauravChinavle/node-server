@@ -1,0 +1,18 @@
+const mysql = require('mysql-await');
+
+// const connection = mysql.createConnection();
+
+
+const connection = mysql.createConnection({
+  host: process.env.DB_HOST,
+  user: process.env.DB_USERNAME,
+  password: process.env.DB_PASSWORD,
+  database: 'conqtvms_dev'
+});
+
+connection.on(`error`, (err) => {
+  console.error(`Connection error ${err.code}`);
+});
+// connection.end();
+
+module.exports = connection;
